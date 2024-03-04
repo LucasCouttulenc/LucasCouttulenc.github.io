@@ -1,0 +1,154 @@
+html{
+    font-size: 15px;
+    background-color: black;
+}
+
+/****************    FUENTES    ****************/
+@font-face {
+    src: url(resources/fonts/FugazOne-Regular.ttf);
+    font-family: 'FugazOne-Regular';
+}
+.FugazOne-Regular {
+    font-family: 'FugazOne-Regular'
+}
+
+/*---------------    FUENTES    ---------------*/
+
+/*body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("resources/images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); /* Ajusta el valor de blur según tu preferencia 
+    z-index: -1; /* Coloca la capa detrás del contenido 
+    opacity: 0.5;
+}
+*/
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d2436;
+    z-index: -1;
+}
+
+body{
+    color: white;
+}
+
+body h1{
+    font-size: 20px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+body h2{
+    font-size: 16px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+body a{
+    text-decoration: none;
+    color:inherit;
+}
+
+body svg{
+    width: auto;
+    height: auto;
+}
+
+
+@media screen and (min-width: 768px){
+    main{
+        width: 720px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+body main section{
+    margin-top: 80px;
+}
+
+#mi-foto{
+    border-radius: 50%;
+    width: 150px;
+}
+
+.mi-nombre{
+    font-size: 30px;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#UBA-logo{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.info{
+    height: 30px;
+    width: 90px;
+    background-color: rgb(158, 156, 156);
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+}
+.info-icon{
+    width: 25px;
+    margin-left: 5px;
+    margin-right: 7px;
+    fill: white;
+}
+.info-text{
+    font-size: 10px;
+}
+
+
+.titulo-section-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.titulo-section-icon{
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 7px;
+    fill: white;
+}
+.titulo-section-text{
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
