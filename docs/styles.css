@@ -54,6 +54,15 @@ body svg{
     height: auto;
 }
 
+.icon{
+    width: 100%;
+    height: 100%;
+}
+
+body ul{
+    padding: 0px;
+}
+
 header{
     position: fixed;
     display: flex;
@@ -153,11 +162,13 @@ body main section{
 
 .proyecto-text{
     font-size: 30px;
+    margin-top: 20px;
 }
 .proyecto-div-contenedor{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+    margin-top: 10px;
 }
 .proyecto-img{
     width: 350px;
@@ -227,7 +238,111 @@ body main section{
 }
 
 
+.conocimientos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.conocimientos li{
+    background-color: aquamarine;
+    height: 40px;
+    min-width: 110px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.conocimientos li h2{
+    font-size: 20px;
+    color: #0d2436;
+    margin-right: 20px;
+}
+.conocimientos .icon{
+    height:  30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
+
+
+.contacto-div-general{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-div-general .seccion-mail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.contacto-div-general .seccion-mail .mail{
+    background-color: #003c69;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    border: rgb(192, 192, 192) solid;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.contacto-div-general .seccion-mail .mail h2{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+.boton{
+    background-color: #bebebe;
+    width: 70px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.boton .icon{
+    height: 25px;
+    width: 25px;
+}
+.contacto-div-general .seccion-social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.contacto-div-general .seccion-social .redes-sociales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.contacto-div-general .seccion-social .redes-sociales li{
+    margin-right: 20px;
+}
+.contacto-div-general .seccion-social .redes-sociales li .red-social{
+    background-color: rgb(78, 133, 250);
+    height: 40px;
+    min-width: 100px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.contacto-div-general .seccion-social .redes-sociales li .red-social .icon{
+    height:  30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contacto-div-general .seccion-social .redes-sociales li .red-social h2{
+    font-size: 20px;
+    color: #0d2436;
+    
+}
 
 
 
