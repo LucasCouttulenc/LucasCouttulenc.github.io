@@ -1,7 +1,7 @@
 html{
     font-size: 15px;
     background-color: black;
-    user-select: none !important;
+    /*user-select: none !important;*/
 }
 
 
@@ -23,13 +23,17 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0d2436;
+    /*background-color: #0d2436;*/
+    /*background-color: #020617;*/
+    background-color: #00051d;
     z-index: -1;
 }
 
 body{
     color: white;
     font-family: 'FugazOne-Regular';
+    /*font-family: Lato, system-ui, sans serif;*/
+    font-weight: normal;
 }
 
 body h1{
@@ -135,7 +139,7 @@ body main section{
     border-radius: 20px;
 }
 .info-icon{
-    width: 25px;
+    width: 20px;
     margin-left: 5px;
     margin-right: 7px;
     fill: white;
@@ -195,9 +199,9 @@ body main section{
     align-items: center;
 }
 .proyecto-lenguajes li{
-    background-color: aquamarine;
+    background-color: rgb(15 23 42);
     height: 40px;
-    width: 110px;
+    min-width: 110px;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
@@ -205,11 +209,13 @@ body main section{
 }
 .proyecto-lenguajes li h2{
     font-size: 20px;
-    color: #0d2436;
+    color: white;
+    margin-right: 20px;
 }
 .proyecto-lenguajes svg{
     height:  30px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .proyecto-botones{
@@ -220,7 +226,7 @@ body main section{
 .proyecto-botones li{
     background-color: rgb(201, 201, 201);
     height: 40px;
-    width: 110px;
+    min-width: 90px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -235,6 +241,7 @@ body main section{
 .proyecto-botones svg{
     height:  25px;
     margin-left: 5px;
+    margin-right: 10px;
 }
 
 
@@ -245,10 +252,10 @@ body main section{
     flex-wrap: wrap;
 }
 .conocimientos li{
-    background-color: aquamarine;
+    background-color: rgb(15 23 42);
     height: 40px;
     min-width: 110px;
-    border-radius: 25px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -257,7 +264,7 @@ body main section{
 }
 .conocimientos li h2{
     font-size: 20px;
-    color: #0d2436;
+    color: white;
     margin-right: 20px;
 }
 .conocimientos .icon{
@@ -279,32 +286,63 @@ body main section{
     margin-top: 15px;
 }
 .contacto-div-general .seccion-mail .mail{
-    background-color: #003c69;
+    background-color: #0f172a;
     width: 400px;
     height: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: rgb(192, 192, 192) solid;
     border-width: 1px;
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
-.contacto-div-general .seccion-mail .mail h2{
+.contacto-div-general .seccion-mail .mail #mail{
     font-size: 20px;
     margin-right: 20px;
     margin-left: 15px;
+    font-family: Lato;
 }
 .boton{
     background-color: #bebebe;
+    /*#7dd3fc*/
     width: 70px;
     height: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
 .boton .icon{
     height: 25px;
     width: 25px;
 }
+
+.boton .tooltip{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    min-height: 30px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: -30px;
+    top: -20px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+}
+#boton-copiar-mail #copiar-tooltip.tooltip-copiado{
+    display: block;
+    background-color: rgb(3, 90, 3)
+}
+#boton-enviar-mail.boton #enviar-tooltip{
+    top: -20px;
+}
+
 .contacto-div-general .seccion-social{
     display: flex;
     flex-direction: row;
@@ -321,10 +359,10 @@ body main section{
     margin-right: 20px;
 }
 .contacto-div-general .seccion-social .redes-sociales li .red-social{
-    background-color: rgb(78, 133, 250);
+    background-color: #131c4e;
     height: 40px;
     min-width: 100px;
-    border-radius: 25px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -340,7 +378,7 @@ body main section{
 }
 .contacto-div-general .seccion-social .redes-sociales li .red-social h2{
     font-size: 20px;
-    color: #0d2436;
+    color: white;
     
 }
 
