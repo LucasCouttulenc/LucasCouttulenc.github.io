@@ -147,6 +147,29 @@ body main section{
 .info-text{
     font-size: 10px;
 }
+#cv-div{
+    background-color: #bebebe;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+#cv-div:hover{
+    background-color: #969696;
+}
+#cv-div .cv-icon{
+    height: 30px;
+    margin-left:  10px;
+}
+#cv-div #cv-text{
+    color: #00051d;
+    font-size: 15px;
+    margin: 5px;
+}
+
 
 
 .titulo-section-div{
@@ -347,7 +370,7 @@ body main section{
 .boton .tooltip{
     display: none;
     position: absolute;
-    min-width: 100px;
+    min-width: 110px;
     min-height: 30px;
     background-color: #333;
     padding: 5px;

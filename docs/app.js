@@ -3,7 +3,7 @@ function copiarMail() {
     var mailTexto = mailElemento.textContent.trim(); // Utiliza trim() para eliminar espacios en blanco
   
     navigator.clipboard.writeText(mailTexto).then(function () {
-        document.getElementById('copiar-tooltip').innerText = 'Mail copiado!';
+        document.getElementById('copiar-tooltip').innerText = 'Email copiado!';
         document.getElementById('copiar-tooltip').classList.add('tooltip-copiado');
 
         console.log('Correo copiado al portapapeles:', mailTexto);
