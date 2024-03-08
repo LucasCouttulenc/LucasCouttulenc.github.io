@@ -570,7 +570,33 @@ body main section{
     margin-right: 0px;
     }
 }
-
+.cuenta-ig-3d{
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+}
+.cuenta-ig-3d .red-social{
+    background-color: #131c4e;
+    height: 40px;
+    min-width: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.cuenta-ig-3d .red-social .icon{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cuenta-ig-3d .red-social h2{
+    font-size: 20px;
+    color: white;
+}
 
 
 
