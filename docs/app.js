@@ -1,3 +1,25 @@
+/*const abrirPopup = document.getElementById('abrir-popup');
+const popupContainer = ;
+const cerrarPopup = document.getElementById('cerrar-popup');
+
+abrirPopup.addEventListener('click', ()=>{
+    popupContainer.classList.add('mostrar-popup');
+    document.body.style.overflow = 'hidden';
+});
+cerrarPopup.addEventListener('click', ()=>{
+    popupContainer.classList.add('cerrar-popup');
+    document.body.style.overflow = 'auto';
+});
+*/
+function abrirPopup(){
+    document.getElementById('popup-container').classList.add('mostrar-popup');
+    document.body.style.overflow = 'hidden';
+}
+function cerrarPopup(){
+    document.getElementById('popup-container').classList.remove('mostrar-popup');
+    document.body.style.overflow = 'auto';
+}
+
 function copiarMail() {
     var mailElemento = document.getElementById('mail');
     var mailTexto = mailElemento.textContent.trim(); // Utiliza trim() para eliminar espacios en blanco
@@ -10,7 +32,7 @@ function copiarMail() {
       }).catch(function (err) {
         console.error('Error al copiar el correo al portapapeles:', err);
       });
-  }
+}
   
 function mostrarCopiarTooltip() {
     document.getElementById('copiar-tooltip').style.display = 'flex';
@@ -29,3 +51,4 @@ function ocultarEnviarTooltip(textoOriginal = String) {
     document.getElementById('enviar-tooltip').innerText = textoOriginal;
     document.getElementById('enviar-tooltip').classList.remove('tooltip-copiado');
 }
+

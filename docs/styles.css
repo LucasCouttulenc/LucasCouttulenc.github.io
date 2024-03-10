@@ -184,10 +184,31 @@ body main section{
     font-size: 50px;
 }
 
-.proyecto-text{
-    font-size: 30px;
+.proyecto-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 20px;
 }
+.proyecto-titulo .proyecto-text{
+    font-size: 30px;
+}
+.proyecto-titulo .estado{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(230, 88, 88);
+    border-radius: 15px;
+    margin-left: 50px;
+}
+.proyecto-titulo .estado h2{
+    font-size: 15px;
+    color: black;
+}
+
 .proyecto-div-contenedor{
     display: flex;
     flex-direction: row;
@@ -257,7 +278,7 @@ body main section{
     margin-right: 20px;
 }
 .proyecto-lenguajes svg{
-    height:  30px;
+    height: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -266,8 +287,10 @@ body main section{
     display: flex;
     flex-direction: row;
     align-items: center;
+    list-style: none;
 }
-.proyecto-botones li{
+.proyecto-botones li button,
+.proyecto-botones li a{
     background-color: rgb(201, 201, 201);
     height: 40px;
     min-width: 90px;
@@ -276,8 +299,12 @@ body main section{
     flex-direction: row;
     align-items: center;
     margin-right: 10px;
+    border:none;
+    cursor: pointer;
 }
-.proyecto-botones li h2{
+.proyecto-botones li button h2,
+.proyecto-botones li a h2{
+    font-family: 'FugazOne-Regular';
     font-size: 15px;
     color: #080f14;
     margin-left: 10px;
@@ -287,6 +314,70 @@ body main section{
     margin-left: 5px;
     margin-right: 10px;
 }
+.popup-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.popup-container .popup {
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.315);
+    text-align: center;
+}
+@media screen and (max-width: 900px){
+    .popup-container .popup {
+        width: 50%;
+    }
+    .popup-container .popup p{
+        font-size: 10px;
+        margin-top: 40px;
+    }
+}
+.popup-container .popup .boton-cerrar-popup{
+    width: 50px;
+    height: 50px;
+    background-color: #131c4e;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-container .popup .boton-cerrar-popup .icon{
+    height: 40px;
+    width: 40px;
+    margin: 0;;
+}
+.popup-container .popup p{
+    font-size: 20px;
+    color: black;
+}
+.ocultar-popup {
+    display: none;
+}
+.mostrar-popup{
+    display: block;
+}
+
 
 
 .conocimientos{
@@ -358,6 +449,7 @@ body main section{
     align-items: center;
     justify-content: center;
     border: none;
+    cursor: pointer;
 }
 .boton .icon{
     height: 25px;
@@ -455,7 +547,7 @@ body main section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #foto-yo{
     width: 250px;
@@ -584,6 +676,9 @@ body main section{
         margin-left: 0px;
         margin-right: 0px;
     }
+    .pagina-img{
+        width: 380px;
+    }
 }
 
 
@@ -591,8 +686,8 @@ body main section{
     display: flex;
     flex-direction: row;
     min-width: fit-content;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 .cuenta-ig-3d .red-social{
     background-color: #131c4e;
