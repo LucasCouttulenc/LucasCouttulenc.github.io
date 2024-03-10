@@ -190,6 +190,17 @@ body main section{
     align-items: center;
     margin-top: 20px;
 }
+@media screen and (max-width: 550px){
+    .proyecto-titulo{
+        flex-direction: column;
+    }   
+    .proyecto-titulo .estado{
+        align-self: self-end;
+        margin-right: 30px;
+    }
+}
+    
+
 .proyecto-titulo .proyecto-text{
     font-size: 30px;
 }
