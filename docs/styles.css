@@ -58,10 +58,7 @@ body svg{
     height: auto;
 }
 
-.icon{
-    width: 100%;
-    height: 100%;
-}
+
 
 body ul{
     padding: 0px;
@@ -458,6 +455,7 @@ body main section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 #foto-yo{
     width: 250px;
@@ -527,6 +525,7 @@ body main section{
 }
 .img-mini-proyecto{
     width: 300px;
+    box-shadow: 4px 4px 10px rgba(28, 84, 122, 0.39);  /* Sombra sutil */
 }
 @media (max-width: 720px){
     .fotos-mini-proyectos{
@@ -546,6 +545,20 @@ body main section{
     font-weight: bold;
 }
 
+.titulo-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.titulo-div .icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.pagina-img{
+    width: 500px;
+}
+
 .proyectos-3d{
     display: flex;
     flex-direction: row;
@@ -555,8 +568,10 @@ body main section{
 }
 .proyectos-3d img{
     height: 300px;
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
+    box-shadow: 4px 4px 10px rgba(28, 84, 122, 0.39);  /* Sombra sutil */
 }
 @media (max-width: 720px){
     .proyectos-3d{
@@ -567,13 +582,17 @@ body main section{
     .proyectos-3d img{
         margin-top: 20px;
         margin-left: 0px;
-    margin-right: 0px;
+        margin-right: 0px;
     }
 }
+
+
 .cuenta-ig-3d{
     display: flex;
     flex-direction: row;
     min-width: fit-content;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .cuenta-ig-3d .red-social{
     background-color: #131c4e;
@@ -583,19 +602,19 @@ body main section{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 15px;
-    margin-bottom: 10px;
     font-size: 15px;
 }
 .cuenta-ig-3d .red-social .icon{
     height: 30px;
-    width: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.cuenta-ig-3d .red-social h2{
+.cuenta-ig-3d h2{
     font-size: 20px;
     color: white;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-right: 15px;
 }
 
 
