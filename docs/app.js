@@ -1,16 +1,23 @@
-/*const abrirPopup = document.getElementById('abrir-popup');
-const popupContainer = ;
-const cerrarPopup = document.getElementById('cerrar-popup');
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
 
-abrirPopup.addEventListener('click', ()=>{
-    popupContainer.classList.add('mostrar-popup');
-    document.body.style.overflow = 'hidden';
-});
-cerrarPopup.addEventListener('click', ()=>{
-    popupContainer.classList.add('cerrar-popup');
-    document.body.style.overflow = 'auto';
-});
-*/
+
 function abrirPopup(){
     document.getElementById('popup-container').classList.add('mostrar-popup');
     document.body.style.overflow = 'hidden';

@@ -86,6 +86,10 @@ header{
     padding-left: 15px;
     padding-right: 15px;
     font-size: 18px;
+    transition: color 0.3s;
+}
+#navbar a:hover{
+    color: rgb(90, 120, 253);
 }
 
 @media screen and (min-width: 720px){
@@ -98,6 +102,31 @@ header{
         padding: 20px;
     }
 }
+
+.boton-go-back{
+    display: none;
+    background-color: #20317c9a;  
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.boton-go-back svg{
+    height: 40px;
+    width: 40px;
+    fill: white;
+}
+@media screen and (max-width: 760px){    
+    .boton-go-back{
+        display: flex;
+    }
+}
+
 
 body main section{
     margin-top: 80px;
@@ -169,12 +198,14 @@ body main section{
 
 
 
-.titulo-section-div{
+.titulo-section-div,
+.titulo-article-div{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.titulo-section-icon{
+.titulo-section-icon,
+.titulo-article-icon{
     width: 50px;
     margin-left: 5px;
     margin-right: 15px;
@@ -182,6 +213,9 @@ body main section{
 }
 .titulo-section-text{
     font-size: 50px;
+}
+.titulo-article-text{
+    font-size: 40px;
 }
 
 
@@ -203,7 +237,8 @@ body main section{
 .proyecto-titulo .proyecto-text{
     font-size: 30px;
 }
-.proyecto-titulo .estado{
+.proyecto-titulo .estado,
+.proyecto-section .estado{
     display: flex;
     align-items: center;
     width: fit-content;
@@ -268,12 +303,14 @@ body main section{
     margin-top: 15px;
 }
 
-.proyecto-lenguajes{
+.proyecto-lenguajes,
+.lista-lenguajes{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.proyecto-lenguajes li{
+.proyecto-lenguajes li,
+.bj-lenguaje{
     background-color: rgb(15 23 42);
     height: 40px;
     min-width: 110px;
@@ -282,12 +319,14 @@ body main section{
     flex-direction: row;
     align-items: center;
 }
-.proyecto-lenguajes li h2{
+.proyecto-lenguajes li h2,
+.bj-lenguaje h2{
     font-size: 20px;
     color: white;
     margin-right: 20px;
 }
-.proyecto-lenguajes svg{
+.proyecto-lenguajes svg, 
+.bj-lenguaje svg{
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -299,8 +338,12 @@ body main section{
     align-items: center;
     list-style: none;
 }
+.proyecto-botones li button{
+    padding: 0;
+}
 .proyecto-botones li button,
-.proyecto-botones li a{
+.proyecto-botones li a,
+.boton-codigo-pagina{
     background-color: rgb(201, 201, 201);
     height: 40px;
     min-width: 90px;
@@ -312,6 +355,14 @@ body main section{
     border:none;
     cursor: pointer;
 }
+/*      CAMBIAR LOS BOTONES DE CODIGO        */
+.proyecto-botones li .boton-codigo-no-disponible{
+    display: none;
+}
+.proyecto-botones li .boton-codigo-disponible{
+    display: flex;
+}
+/*      CAMBIAR LOS BOTONES DE CODIGO        */
 .proyecto-botones li button h2,
 .proyecto-botones li a h2{
     font-family: 'FugazOne-Regular';
@@ -418,7 +469,47 @@ body main section{
     margin-left: 10px;
     margin-right: 10px;
 }
-
+#idiomas{
+    margin-top: 40px;
+}
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.idiomas li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.idiomas li .titulo-idioma{
+    display: flex;
+    flex-direction: row;
+}
+.idiomas li .titulo-idioma h2{
+    font-size: 25px;
+}
+.idiomas li .titulo-idioma .nivel-basico,
+.idiomas li .titulo-idioma .nivel-intermedio-avanzado{
+    background-color: rgb(197, 98, 52);
+    width: fit-content;
+    height: 20px;
+    margin-left: 20px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 6px 10px;
+}
+.idiomas li .titulo-idioma .nivel-basico{
+    background-color: rgb(102, 192, 117);
+}
+.idiomas li p{
+    margin-left: 15px;
+    font-size: 15px;
+}
 
 
 .contacto-div-general{
@@ -538,18 +629,51 @@ body main section{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-
+}
+@media screen and (max-width: 760px){    
+    .proyecto-section{
+        margin-top: 150px;
+    }
 }
 .titulo-proyecto{
     font-size: 30px;
-    margin-bottom: 10px;
+}
+.proyecto-section .estado{
+    margin: 0 0 10px 0;
+    height: 20px;
+}
+.proyecto-section .estado h2{
+    font-size: 10px;
+}
+.imagen-contenedor{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
 }
 .main-img-proyecto{
-    max-width: 80%;
+    width: 100%;
+}
+.epigrafe{
+    font-size: 10px;
+    align-self: self-end;
+}
+.bj-lenguaje{
+    margin: 0 10px;
 }
 .descripcion{
     font-size: 15px;
     margin-top: 20px;
+}
+.explicacion-actual{
+    font-size: 13px;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+.color1{
+    color: #90a0ff;
+}
+.color2{
+    color: #90ffba;
 }
 
 /****************  mas-personal-info.html  ***************/
@@ -557,7 +681,12 @@ body main section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 100px;
+}
+@media screen and (max-width: 760px){    
+    .mas-personal-info-section{
+        margin-top: 160px;
+    }
 }
 #foto-yo{
     width: 250px;
@@ -574,8 +703,6 @@ body main section{
 }
 
 .texto{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     font-size: 15px;
     line-height: 1.7;
@@ -660,7 +787,17 @@ body main section{
 .pagina-img{
     width: 500px;
 }
-
+.boton-codigo-pagina{
+    width: fit-content;
+    padding-left: 10px;
+    margin-top: 10px;
+    align-self: center;
+}
+.boton-codigo-pagina .icon{
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
 .proyectos-3d{
     display: flex;
     flex-direction: row;
