@@ -155,23 +155,26 @@ body main section{
 }
 
 .info{
-    height: 30px;
-    width: 90px;
-    background-color: rgb(158, 156, 156);
+    height: 35px;
+    width: fit-content;
+    background-color: rgb(99, 99, 99);
     margin-top: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 20px;
+    padding: 0 15px 0 10px;
+}
+.info:hover{
+    background-color: rgb(87, 87, 87);
 }
 .info-icon{
     width: 20px;
-    margin-left: 5px;
-    margin-right: 7px;
     fill: white;
 }
 .info-text{
-    font-size: 10px;
+    font-size: 13px;
+    margin-left: 10px;
 }
 #cv-div{
     background-color: #bebebe;
@@ -191,7 +194,7 @@ body main section{
     height: 30px;
 }
 #cv-div #cv-text{
-    color: #00051d;
+    color: black;
     font-size: 15px;
     margin: 5px;
 }
@@ -681,10 +684,10 @@ body main section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 @media screen and (max-width: 760px){    
-    .mas-personal-info-section{
+    #primer-personal-info-section{
         margin-top: 160px;
     }
 }
