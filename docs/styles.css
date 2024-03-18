@@ -360,10 +360,10 @@ body main section{
 }
 /*      CAMBIAR LOS BOTONES DE CODIGO        */
 .proyecto-botones li .boton-codigo-no-disponible{
-    display: none;
+    display: flex;
 }
 .proyecto-botones li .boton-codigo-disponible{
-    display: flex;
+    display: none;
 }
 /*      CAMBIAR LOS BOTONES DE CODIGO        */
 .proyecto-botones li button h2,
