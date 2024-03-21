@@ -70,6 +70,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    z-index: 999;
 }
 #navbar{
     display: flex;
@@ -127,6 +128,20 @@ header{
     }
 }
 
+body .img-zoom{
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+body .img-zoom:hover{
+    transform: scale(1.05);
+}
+body .img-zoom2{
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+body .img-zoom2:hover{
+    transform: scale(1.02);
+}
 
 body main section{
     margin-top: 80px;
@@ -388,6 +403,7 @@ body main section{
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 9999;
 }
 .popup-container .popup {
     background-color: #fff;
