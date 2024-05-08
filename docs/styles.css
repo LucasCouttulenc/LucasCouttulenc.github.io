@@ -117,7 +117,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.boton-go-back svg{
+.boton-go-back .icon{
     height: 40px;
     width: 40px;
     fill: white;
@@ -304,6 +304,7 @@ body main section{
 }
 .proyecto-img{
     width: 350px;
+    border-radius: 10px;
 }
 .proyecto-info{
     display: flex;
@@ -331,7 +332,6 @@ body main section{
 .bj-lenguaje{
     background-color: rgb(15 23 42);
     height: 40px;
-    min-width: 110px;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
@@ -343,8 +343,8 @@ body main section{
     color: white;
     margin-right: 20px;
 }
-.proyecto-lenguajes svg, 
-.bj-lenguaje svg{
+.proyecto-lenguajes .icon, 
+.bj-lenguaje .icon{
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -388,7 +388,7 @@ body main section{
     color: #080f14;
     margin-left: 10px;
 }
-.proyecto-botones svg{
+.proyecto-botones .icon{
     height:  25px;
     margin-left: 5px;
     margin-right: 10px;
@@ -469,7 +469,6 @@ body main section{
 .conocimientos li{
     background-color: rgb(15 23 42);
     height: 40px;
-    min-width: 110px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -483,8 +482,7 @@ body main section{
     margin-right: 20px;
 }
 .conocimientos .icon{
-    height:  30px;
-    width: 30px;
+    height:  25px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -615,26 +613,23 @@ body main section{
 .contacto-div-general .seccion-social .redes-sociales li{
     margin-right: 20px;
 }
-.contacto-div-general .seccion-social .redes-sociales li .red-social{
+/* .contacto-div-general .seccion-social .redes-sociales li .red-social{
     background-color: #131c4e;
-    height: 40px;
-    min-width: 100px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 15px;
+    padding: 7px 15px;
     margin-bottom: 10px;
     font-size: 15px;
-}
+} */
 .contacto-div-general .seccion-social .redes-sociales li .red-social .icon{
-    height:  30px;
-    width: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height:  45px;
+    margin-right: 15px;
 }
 .contacto-div-general .seccion-social .redes-sociales li .red-social h2{
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 17px;
     color: white;
     
 }
@@ -774,6 +769,7 @@ body main section{
 .img-mini-proyecto{
     width: 300px;
     box-shadow: 4px 4px 10px rgba(28, 84, 122, 0.39);  /* Sombra sutil */
+    border-radius: 10px;
 }
 @media (max-width: 720px){
     .fotos-mini-proyectos{
@@ -785,6 +781,10 @@ body main section{
         margin-top: 20px;
         margin-right: 0px;
     }
+}
+.mas-personal-info-section {
+    display: flex;
+    flex-direction: column;
 }
 .mas-personal-info-section .titulo-seccion{
     font-size: 30px;
@@ -803,8 +803,15 @@ body main section{
     width: 30px;
     margin-right: 10px;
 }
+.mas-personal-info-section a{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
 .pagina-img{
-    width: 500px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
 }
 .boton-codigo-pagina{
     width: fit-content;
@@ -830,6 +837,7 @@ body main section{
     margin-left: 20px;
     margin-right: 20px;
     box-shadow: 4px 4px 10px rgba(28, 84, 122, 0.39);  /* Sombra sutil */
+    border-radius: 10px;
 }
 @media (max-width: 720px){
     .proyectos-3d{
