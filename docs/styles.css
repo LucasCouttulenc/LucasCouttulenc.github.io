@@ -322,31 +322,23 @@ body main section{
     margin-top: 15px;
 }
 
-.proyecto-lenguajes,
-.lista-lenguajes{
+.proyecto-lenguajes{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.proyecto-lenguajes li,
-.bj-lenguaje{
+/* .proyecto-lenguajes li{
     background-color: rgb(15 23 42);
     height: 40px;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.proyecto-lenguajes li h2,
-.bj-lenguaje h2{
-    font-size: 20px;
-    color: white;
-    margin-right: 20px;
-}
-.proyecto-lenguajes .icon, 
-.bj-lenguaje .icon{
+    width: fit-content;
+    padding: 5px 20px;
+} */
+.proyecto-lenguajes .icon{
     height: 30px;
-    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -460,13 +452,15 @@ body main section{
 
 
 
-.conocimientos{
+.conocimientos,
+.lista-lenguajes {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
-.conocimientos li{
+.conocimientos li,
+.lista-lenguajes li{
     background-color: rgb(15 23 42);
     height: 40px;
     border-radius: 15px;
@@ -476,12 +470,14 @@ body main section{
     margin-right: 20px;
     margin-bottom: 10px;
 }
-.conocimientos li h2{
+.conocimientos li h2,
+.lista-lenguajes li h2 {
     font-size: 20px;
     color: white;
     margin-right: 20px;
 }
-.conocimientos .icon{
+.conocimientos li .icon,
+.lista-lenguajes li .icon{
     height:  25px;
     margin-left: 10px;
     margin-right: 10px;
@@ -636,7 +632,7 @@ body main section{
 
 
 
-/****************  BJ-mas-info.html  ***************/
+/****************  PROYECTO-mas-info.html  ***************/
 
 .proyecto-section{
     display: flex;
@@ -663,16 +659,18 @@ body main section{
     display: flex;
     flex-direction: column;
     max-width: 80%;
+    margin-bottom: 10px;
 }
 .main-img-proyecto{
     width: 100%;
+    border-radius: 15px;
 }
 .epigrafe{
     font-size: 10px;
     align-self: self-end;
 }
-.bj-lenguaje{
-    margin: 0 10px;
+.lista-lenguajes {
+    justify-content: center !important;
 }
 .descripcion{
     font-size: 15px;

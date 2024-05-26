@@ -1,0 +1,103 @@
+
+    <!-- Dimensiones de la pantalla: 1356px x 657px -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Lucas Couttulenc</title>
+    
+        <link rel="stylesheet" href="styles.css">
+    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       
+        <script src="app.js"></script>
+    </head>
+    <body>
+    
+        <header>
+            <nav id="navbar">
+                <a href="index.html#sobre-mi">Sobre Mí</a>
+                <a href="index.html#proyectos">Proyectos</a>
+                <a href="index.html#conocimientos">Conocimientos</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+        </header>
+    
+        <main>
+            <a class="boton-go-back" href="index.html">
+                <img class="icon" src="resources/icons/back-icon.svg" alt="">
+            </a>
+            <section class="proyecto-section">
+                <h1 class="titulo-proyecto">My Marvel List</h1>
+                <div class="estado">
+                    <h2>En Desarrollo</h2>
+                </div>
+                <div class="imagen-contenedor">
+                    <video class="main-img-proyecto img-zoom2" src="resources/videos/MML home view.mp4" controls loop></video>
+                </div>
+                <ul class="lista-lenguajes">
+                    <li>
+                        <img class="icon" src="resources/icons/html-icon.svg" alt="">                        
+                        <h2>HTML5</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/css-icon.svg" alt="">                        
+                        <h2>CSS3</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/js-icon.svg" alt="">                        
+                        <h2>Java Scrpit</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/nodejs-icon.svg" alt="">                        
+                        <h2>NodeJS</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/sql2-icon.svg" alt="">                        
+                        <h2>SQLite</h2>
+                    </li>
+                </ul>
+                <h2 class="descripcion">
+                    Un sitio para los fanes de Marvel. <br>
+                    En este sitio podrás ver todo el catálogo del UCM en el orden que prefieras.  <br>
+                    Además, podrás agregar a tus favoritos, calificar y hacer una tier list de tus películas favoritas.
+                </h2>
+                <div class="imagen-contenedor">
+                    <video class="main-img-proyecto img-zoom2" src="resources/videos/MML pelicula view.mp4" controls loop></video>
+                </div>
+                <div class="imagen-contenedor">
+                    <video class="main-img-proyecto img-zoom2" src="resources/videos/MML login view.mp4" controls loop></video>
+                </div>
+
+                <ul class="proyecto-botones">
+                    <li>
+                        <button id="boton-abrir-popup" class="boton-codigo-no-disponible" onclick="abrirPopup()">
+                            <h2>Código</h2>
+                            <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                        </button>
+                        <a class="boton-codigo-disponible" href="https://github.com/LucasCouttulencFiuba/BlackJackSimulator/tree/GUI/src"  target="_blank">
+                            <h2>Código</h2>
+                            <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <div id="popup-container" class="popup-container" onclick="cerrarPopup()">
+                        <div class="popup" onclick="event.stopPropagation();">
+                            <button class="boton-cerrar-popup" onclick="cerrarPopup()">
+                                <img class="icon" src="resources/icons/x-icon.svg" alt="">
+                            </button>
+                            <p>El código no está disponible en este momento. <br>Por favor envíeme un email para darle acceso. <br>Gracias!</p>
+                        </div>
+                    </div>
+                </ul>
+                
+            </section>
+        </main>
+    
+    </body>
+    </html>
+    
