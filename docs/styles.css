@@ -267,9 +267,17 @@ body main section{
     border-radius: 15px;
     margin-left: 50px;
 }
-.proyecto-titulo .estado h2{
+.proyecto-titulo .estado h2,
+.proyecto-section .estado h2{
     font-size: 15px;
     color: black;
+}
+.proyecto-section .advertencia{
+    background-color: rgb(204, 39, 39);
+}
+.proyecto-section .advertencia h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .proyecto-div-contenedor{
@@ -889,3 +897,18 @@ body main section{
 
 
 
+.boton-ir-al-site{
+    background-color: #4151aa;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 7px 10px;
+    gap: 8px;
+    transition: 300ms ease;
+}
+.boton-ir-al-site .icon{
+    height: 20px;
+}
+.boton-ir-al-site:hover{
+    background-color: #1c2973;
+}

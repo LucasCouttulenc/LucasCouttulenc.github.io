@@ -5,7 +5,7 @@
    width="24"
    version="1.1"
    id="svg4"
-   sodipodi:docname="external-link-icon.svg"
+   sodipodi:docname="external-link-icon blanco.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="17.4375"
-     inkscape:cx="-2.3225806"
+     inkscape:cx="-9.9498208"
      inkscape:cy="13.878136"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -36,5 +36,5 @@
      d="m 21.275262,14.64994 v 6.624851 c 0,1.463522 -1.186419,2.64994 -2.64994,2.64994 H 2.7256803 c -1.4635216,0 -2.64994029,-1.186418 -2.64994029,-2.64994 V 5.3751493 c 0,-1.4635216 1.18641869,-2.6499402 2.64994029,-2.6499402 H 9.3505309 V 5.3751493 H 2.7256803 V 21.274791 H 18.625322 V 14.64994 Z M 21.27142,4.5989998 11.608554,14.261866 9.7347634,12.388075 19.397629,2.7252091 h -6.07603 V 0.07526882 H 23.92136 V 10.67503 h -2.64994 z"
      fill-rule="evenodd"
      id="path2"
-     style="stroke-width:1.32497" />
+     style="stroke-width:1.32497;fill:#ffffff;fill-opacity:1" />
 </svg>
