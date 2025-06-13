@@ -1,0 +1,41 @@
+@font-face {
+    src: url(../resources/fonts/FugazOne-Regular.ttf);
+    font-family: 'FugazOne-Regular';
+}
+
+@font-face {
+    src: url(../resources/fonts/LATO-REGULAR.TTF);
+    font-family: 'Lato-Regular';
+}
+
+@font-face {
+    src: url(../resources/fonts/INTER-REGULAR.OTF);
+    font-family: 'Inter-Regular';
+}
+@font-face {
+    src: url(../resources/fonts/INTER-BOLD.OTF);
+    font-family: 'Inter-Bold';
+}
+@font-face {
+    src: url(../resources/fonts/INTER-SEMIBOLD.OTF);
+    font-family: 'Inter-SemiBold';
+}
+
+@font-face {
+    src: url(../resources/fonts/WORKSANS-REGULAR.TTF);
+    font-family: 'WorkSans-Regular';
+}
+
+@font-face {
+    src: url(../resources/fonts/SPACEGROTESK-REGULAR.OTF);
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+@font-face {
+    src: url(../resources/fonts/SATOSHI-REGULAR.OTF);
+    font-family: 'Satoshi-Regular';
+}
+@font-face {
+    src: url(../resources/fonts/CABINETGROTESK-REGULAR.OTF);
+    font-family: 'CabinetGrotesk-Regular';
+}

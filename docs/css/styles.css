@@ -1,20 +1,11 @@
+@import url('fonts.css');
+
 html{
     font-size: 15px;
     background-color: black;
     /*user-select: none !important;*/
 }
 
-
-/****************    FUENTES    ****************/
-@font-face {
-    src: url(resources/fonts/FugazOne-Regular.ttf);
-    font-family: 'FugazOne-Regular';
-}
-.FugazOne-Regular {
-    font-family: 'FugazOne-Regular'
-}
-
-/*---------------    FUENTES    ---------------*/
 
 body::before {
     content: "";
@@ -31,8 +22,7 @@ body::before {
 
 body{
     color: white;
-    font-family: 'FugazOne-Regular';
-    /*font-family: Lato, system-ui, sans serif;*/
+    font-family: 'Inter-Regular', 'WorkSans-Regular', 'SpaceGrotesk-Regular', 'Satoshi-Regular', 'CabinetGrotesk-Regular', 'Satoshi-Regular', 'CabinetGrotesk-Regular', 'FugazOne-Regular', system-ui, sans serif;
     font-weight: normal;
 }
 
@@ -40,12 +30,14 @@ body h1{
     font-size: 20px;
     margin: 0px;
     font-weight: normal;
+    font-family: 'Inter-Bold';
 }
 
 body h2{
     font-size: 16px;
     margin: 0px;
     font-weight: normal;
+    font-family: 'Inter-SemiBold';
 }
 
 body a{
@@ -57,7 +49,6 @@ body svg{
     width: auto;
     height: auto;
 }
-
 
 
 body ul{
@@ -163,10 +154,12 @@ body main section{
     margin-top: 5px;
 }
 
-#UBA-logo{
-    width: 30px;
+.facu-logo{
     height: 30px;
     margin-left: 10px;
+}
+#da-vinci-logo{
+    border-radius: 10px;
 }
 
 .info{
@@ -191,27 +184,32 @@ body main section{
     font-size: 13px;
     margin-left: 10px;
 }
+#cvs-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 #cv-div{
     background-color: #bebebe;
-    width: 120px;
     height: 40px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
+    padding: 0 15px 0 10px;
 }
 #cv-div:hover{
     background-color: #969696;
 }
 #cv-div .cv-icon{
-    margin-left:  10px;
     height: 30px;
 }
 #cv-div #cv-text{
     color: black;
     font-size: 15px;
-    margin: 5px;
 }
 
 
