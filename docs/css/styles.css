@@ -829,6 +829,7 @@ body main section{
     width: 30px;
     margin: 0;
 }
+
 .proyectos{
     display: flex;
     flex-direction: row;
