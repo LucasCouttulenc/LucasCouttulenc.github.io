@@ -829,28 +829,27 @@ body main section{
     width: 30px;
     margin: 0;
 }
-.proyectos-3d{
+.proyectos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
-.proyectos-3d img{
+.proyectos img{
     height: 300px;
     width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 20px;
     box-shadow: 4px 4px 10px rgba(28, 84, 122, 0.39);  /* Sombra sutil */
     border-radius: 10px;
 }
 @media (max-width: 720px){
-    .proyectos-3d{
+    .proyectos{
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
     }
-    .proyectos-3d img{
+    .proyectos img{
         margin-top: 20px;
         margin-left: 0px;
         margin-right: 0px;
