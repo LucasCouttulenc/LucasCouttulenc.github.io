@@ -611,9 +611,13 @@ body main section{
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    gap: 20px;
 }
 .contacto-div-general .seccion-social .redes-sociales li{
-    margin-right: 20px;
+    position: relative;
+}
+.contacto-div-general .seccion-social .redes-sociales li:hover {
+    opacity: 0.8;
 }
 /* .contacto-div-general .seccion-social .redes-sociales li .red-social{
     background-color: #131c4e;
@@ -627,13 +631,17 @@ body main section{
 } */
 .contacto-div-general .seccion-social .redes-sociales li .red-social .icon{
     height:  45px;
-    margin-right: 15px;
 }
 .contacto-div-general .seccion-social .redes-sociales li .red-social h2{
     margin-left: 10px;
     font-size: 17px;
-    color: white;
-    
+    color: white;   
+}
+.contacto-div-general .seccion-social .redes-sociales li .red-social .icon-git-type{ 
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
 }
 
 
