@@ -37,10 +37,10 @@
                     <h2>Estudiante de Ingeniería Informática en la UBA</h2>
                     <img class="facu-logo" src="resources/images/Logo-UBA-nuevo-blanco.png">
                 </div>
-                <div class="personal-info">
+                <!-- <div class="personal-info">
                     <h2>Estudiante de Diseño Gráfico Digital en la Escuela Da Vinci</h2>
                     <img class="facu-logo" id="da-vinci-logo" src="resources/images/da vinci 2.jpg">
-                </div>
+                </div> -->
                 <a class="info" href="mas-personal-info.html">
                     <img class="info-icon" src="resources/icons/info-icon.svg" alt="">
                     <h1 class="info-text">Más Info personal</h1>
@@ -61,14 +61,62 @@
                 </a>
             </div>
         </section>
-        <section id="sobre-mi-descripcion">
+        <!-- <section id="sobre-mi-descripcion">
 
-        </section>
+        </section> -->
         <section id="proyectos" style="margin-top: 40px;">
             <div class="titulo-section-div">
                 <img class="titulo-section-icon" src="resources/icons/star-icon.svg" alt="">
                 <h1 class="titulo-section-text">Proyectos</h1>
             </div>
+
+            <article>
+                <div class="proyecto-titulo">
+                    <h1 class="proyecto-text">Echo</h1>
+                </div>
+                <div class="proyecto-div-contenedor">
+                    <a href="https://echo-host.onrender.com/chats" class="img-zoom">
+                        <img class="proyecto-img" src="resources/images/echo.png">
+                    </a>
+                    <div class="proyecto-info">
+                        <h2 class="proyecto-descripcion-text">
+                            Applicación web de mensajería instantánea, con funcionalidades de chat privado, grupal, envío de archivos, etc. <br>
+                        </h2>
+                        <ul class="proyecto-lenguajes">
+                            <img class="icon" src="resources/icons/elixir-icon.svg" alt="">
+                            <img class="icon" src="resources/icons/vue-icon.svg" alt="">
+                            <img class="icon" src="resources/icons/docker-icon.svg" alt="">
+                            <img class="icon" src="resources/icons/postgres-icon.svg" alt="">
+                        </ul>
+                        <ul class="proyecto-botones">
+                            <li>
+                                <!-- <button id="boton-abrir-popup" class="boton-codigo-no-disponible" onclick="abrirPopup()">
+                                    <h2>Código</h2>
+                                    <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                                </button> -->
+                                <a href="https://github.com/mmaddalena/echo"  target="_blank">
+                                    <h2>Código</h2>
+                                    <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                                </a>
+                            </li>
+                            <div id="popup-container" class="popup-container" onclick="cerrarPopup()">
+                                <div class="popup" onclick="event.stopPropagation();">
+                                    <button class="boton-cerrar-popup" onclick="cerrarPopup()">
+                                        <img class="icon" src="resources/icons/x-icon.svg" alt="">
+                                    </button>
+                                    <p>El código no está disponible en este momento. <br>Por favor envíeme un email para darle acceso. <br>Gracias!</p>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="ECHO-mas-info.html">
+                                    <h2>Ver Más</h2>
+                                    <img class="icon" src="resources/icons/external-link-icon.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
 
             <article>
                 <div class="proyecto-titulo">

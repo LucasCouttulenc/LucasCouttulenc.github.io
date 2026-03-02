@@ -1,0 +1,95 @@
+
+    <!-- Dimensiones de la pantalla: 1356px x 657px -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Lucas Couttulenc</title>
+    
+        <link rel="stylesheet" href="css/styles.css">
+    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       
+        <script src="app.js"></script>
+    </head>
+    <body>
+    
+        <header>
+            <nav id="navbar">
+                <a href="index.html#sobre-mi">Sobre Mí</a>
+                <a href="index.html#proyectos">Proyectos</a>
+                <a href="index.html#conocimientos">Conocimientos</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+        </header>
+    
+        <main>
+            <a class="boton-go-back" href="index.html">
+                <img class="icon" src="resources/icons/back-icon.svg" alt="">
+            </a>
+            <section class="proyecto-section">
+                <!-- <h1 class="titulo-proyecto">Echo</h1> -->
+                 <img class="img-titulo-proyecto" src="resources/images/Echo_Logo_Completo_Negativo.png" alt="">
+                <div class="imagen-contenedor">
+                    <img class="main-img-proyecto img-zoom2" src="resources/images/echo.png"></img>
+                </div>
+                <ul class="lista-lenguajes">
+                    <li>
+                        <img class="icon" src="resources/icons/elixir-icon.svg" alt="">                        
+                        <h2>Elixir</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/vue-icon.svg" alt="">                        
+                        <h2>Vue</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/docker-icon.svg" alt="">                        
+                        <h2>Docker</h2>
+                    </li>
+                    <li>
+                        <img class="icon" src="resources/icons/postgres-icon.svg" alt="">                        
+                        <h2>PostgreSQL</h2>
+                    </li>
+                </ul>
+                <a href="https://echo-host.onrender.com/chats" class="boton-ir-al-site" target="_blank">
+                    <img src="resources/icons/external-link-icon blanco.svg" class="icon" alt="">
+                    <h2>Visitar el sitio web</h2>
+                </a>
+                <h2 class="descripcion">
+                    Echo es una aplicación de mensajería en tiempo real que permite a los usuarios comunicarse mediante chats privados y grupales con una experiencia fluida tanto en escritorio como en dispositivos móviles. <br>
+                    El sistema gestiona sesiones activas de usuario, presencia online y sincronización instantánea de mensajes utilizando conexiones persistentes a través de WebSockets, ofreciendo envío de texto y adjuntos multimedia dentro de una interfaz moderna y responsiva. <br>
+                    Su arquitectura separa claramente frontend y backend, priorizando escalabilidad, manejo eficiente del estado y comunicación concurrente para mantener conversaciones actualizadas sin recargas ni interrupciones.
+                </h2>
+
+                <ul class="proyecto-botones">
+                    <li>
+                        <!-- <button id="boton-abrir-popup" class="boton-codigo-no-disponible" onclick="abrirPopup()">
+                            <h2>Código</h2>
+                            <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                        </button> -->
+                        <a href="https://github.com/mmaddalena/echo"  target="_blank">
+                            <h2>Código</h2>
+                            <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <div id="popup-container" class="popup-container" onclick="cerrarPopup()">
+                        <div class="popup" onclick="event.stopPropagation();">
+                            <button class="boton-cerrar-popup" onclick="cerrarPopup()">
+                                <img class="icon" src="resources/icons/x-icon.svg" alt="">
+                            </button>
+                            <p>El código no está disponible en este momento. <br>Por favor envíeme un email para darle acceso. <br>Gracias!</p>
+                        </div>
+                    </div>
+                </ul>
+                
+            </section>
+        </main>
+    
+    </body>
+    </html>
+    

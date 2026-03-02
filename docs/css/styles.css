@@ -166,7 +166,7 @@ body main section{
     height: 35px;
     width: fit-content;
     background-color: rgb(99, 99, 99);
-    margin-top: 5px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -464,6 +464,7 @@ body main section{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .conocimientos li,
 .lista-lenguajes li{
@@ -473,7 +474,6 @@ body main section{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 20px;
     margin-bottom: 10px;
 }
 .conocimientos li h2,
@@ -653,6 +653,11 @@ body main section{
 }
 .titulo-proyecto{
     font-size: 30px;
+    margin-bottom: 20px;
+}
+.img-titulo-proyecto {
+    height: 70px;
+    margin-bottom: 20px;
 }
 .proyecto-section .estado{
     margin: 0 0 10px 0;
@@ -681,6 +686,8 @@ body main section{
 .descripcion{
     font-size: 15px;
     margin-top: 20px;
+    font-weight: normal !important;
+    margin-bottom: 25px;
 }
 .explicacion-actual{
     font-size: 13px;
