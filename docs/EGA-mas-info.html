@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Gordo Alfajores - Lucas Couttulenc</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html#sobre-mi">Sobre Mí</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="index.html#conocimientos">Conocimientos</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <a class="boton-go-back" href="index.html#proyectos" aria-label="Volver a proyectos">
+            <img class="icon" src="resources/icons/back-icon.svg" alt="">
+        </a>
+        <section class="proyecto-section">
+            <img class="img-titulo-proyecto" src="resources/images/el-gordo-alfajores-logo.svg" alt="El Gordo Alfajores" style="background-color: #f8f4eb; padding: 10px 15px; border-radius: 10px;">
+            <div class="imagen-contenedor">
+                <img class="main-img-proyecto img-zoom2" src="resources/images/el-gordo-alfajores.png" alt="Catálogo del álbum con alfajores probados, calificaciones y progreso personal">
+            </div>
+            <ul class="lista-lenguajes">
+                <li>
+                    <img class="icon" src="resources/icons/react-icon.svg" alt="">
+                    <h2>React</h2>
+                </li>
+                <li>
+                    <img class="icon" src="resources/icons/typescript-icon.svg" alt="">
+                    <h2>TypeScript</h2>
+                </li>
+                <li>
+                    <img class="icon" src="resources/icons/Cshar2-icon.svg" alt="">
+                    <h2>C# / ASP.NET Core</h2>
+                </li>
+                <li>
+                    <img class="icon" src="resources/icons/postgres-icon.svg" alt="">
+                    <h2>PostgreSQL</h2>
+                </li>
+                <li>
+                    <img class="icon" src="resources/icons/docker-icon.svg" alt="">
+                    <h2>Docker</h2>
+                </li>
+                <li>
+                    <img class="icon" src="resources/icons/neon-icon.svg" alt="">
+                    <h2>Neon</h2>
+                </li>
+                <li>
+                    <img class="icon" src="resources/icons/cloudflare-icon.svg" alt="" style="width: 25px; object-fit: contain;">
+                    <h2>Cloudflare R2</h2>
+                </li>
+            </ul>
+            <a href="https://elgordoalfajores.lol/" class="boton-ir-al-site" target="_blank" rel="noopener noreferrer">
+                <img src="resources/icons/external-link-icon blanco.svg" class="icon" alt="">
+                <h2>Visitar el sitio web</h2>
+            </a>
+            <p class="descipcion" style="justify-content: center;">
+                <span style="font-weight: bold !important; color: rgb(206, 74, 74);">Aclaración:</span>
+                <span style="font-weight: lighter !important;">El host no está 24/7 andando, sino que se levanta con una request, por lo que la primera carga puede tardar unos segundos.</span>
+            </p>
+            <p class="descripcion">
+                Este es mi primer proyecto en el que delegué gran parte del desarrollo a la IA. Lo hice para experimentar con agentes de IA y explorar cómo trabajar con ellos para llevar una idea a una aplicación publicada. <br>
+                <br>
+                El Gordo Alfajores es una aplicación web inspirada en los álbumes de figuritas, donde cada usuario puede construir su propia colección de alfajores probados. Permite explorar el catálogo por marca, buscar productos, guardar favoritos y consultar el progreso personal. <br>
+                <br>
+                Marcar un alfajor como probado y reseñarlo son acciones independientes: se puede registrar el consumo sin puntuarlo, o agregar una calificación y una reseña con detalles sobre la cobertura, las tapas y el relleno. La comunidad también cuenta con perfiles, desafíos y rankings de personas y de alfajores. <br>
+                <br>
+                El frontend está desarrollado con React y TypeScript, y se comunica con una API REST en C# / ASP.NET Core. Los datos se gestionan con Entity Framework Core y PostgreSQL, y el inicio de sesión utiliza Google OAuth. El catálogo puede consultarse sin crear una cuenta. <br>
+                <br>
+                El sitio está publicado en Vercel, con la API en Render, la base de datos en Neon y las imágenes en Cloudflare R2. El entorno de desarrollo local utiliza Docker Compose.
+            </p>
+            <ul class="proyecto-botones">
+                <li>
+                    <button class="boton-codigo-no-disponible" onclick="abrirPopup()">
+                        <h2>Código</h2>
+                        <img class="icon" src="resources/icons/link-icon.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+            <div id="popup-container" class="popup-container" onclick="cerrarPopup()">
+                <div class="popup" onclick="event.stopPropagation();">
+                    <button class="boton-cerrar-popup" onclick="cerrarPopup()" aria-label="Cerrar">
+                        <img class="icon" src="resources/icons/x-icon.svg" alt="">
+                    </button>
+                    <p>El código no está disponible en este momento. <br>Por favor envíeme un email para darle acceso. <br>Gracias!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
